@@ -46,22 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
             answerButtonsElement.removeChild(answerButtonsElement.firstChild);
         }
     }
-
-
     function selectAnswer(e){
-     const selectedButton = e.target;
-     const correct = selectedButton.dataset.correct;
-     setstatusclass(document.body, correct);
-     Array.from(answerButtonsElement.children).forEach((button) => {
-        setstatusclass(button,button.dataset.correct);
-     });
-     if  (shuffledQuestions.length > currentQuestionIndex + 1){
-        nextButton.classList.remove("hide");
-    }  else{
-        startButton.innerText = "Restart Game";
-        startButton.classList.remove("hide");
-            }
-  }
+        const selectedButton = e.target;
+        const correct = selectedButton.dataset.correct;
+        setstatusclass(document.body, correct);
+        Array.from(answerButtonsElement.children).forEach((button) => {
+           setstatusclass(button,button.dataset.correct);
+        });
+        if  (shuffledQuestions.length > currentQuestionIndex + 1){
+           nextButton.classList.remove("hide");
+       }  else{
+           startButton.innerText = "Restart Game";
+           startButton.classList.remove("hide");
+       }
+     }
 
     function setstatusclass(element,correct){
         clearstatusclass(element);
