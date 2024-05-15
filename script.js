@@ -77,39 +77,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     const questions =[
      {
-        question:"what is frontend?",
+        question:"which program is not commonly used programming language for frontend development?",
         answers:[
-            {text:"web",correct:false},
-            { text:"web interface",correct:true},
-            {text:"web",correct:false},
-            {text:"web",correct:false}, 
+            {text:"python",correct:true},
+            { text:"html",correct:false},
+            {text:"css",correct:false},
+            {text:"javascript",correct:false}, 
             ],
     },
     {
-        question:"what is backend?",
+        question:"what does css stand for?",
         answers:[
-            {text:"web",correct:false},
-            { text:"web interface",correct:true},
-            {text:"web",correct:false},
-            {text:"web",correct:false}, 
+            {text:"Creative Style Sheet",correct:false},
+            { text:"Cascading Style Sheet",correct:true},
+            {text:"Computer Style Sheet",correct:false},
+            {text:"Content Style Sheet",correct:false}, 
             ],
     },
     {
-        question:"what is backend?",
+        question:"Which Html Language is used to define an unordered list?",
         answers:[
-            {text:"web",correct:false},
-            { text:"web interface",correct:true},
-            {text:"web",correct:false},
-            {text:"web",correct:false}, 
+            {text:"<ol>",correct:false},
+            { text:"<ul>",correct:true},
+            {text:"<li>",correct:false},
+            {text:"<list>",correct:false}, 
             ],
     },
     {
-        question:"what is backend?",
+        question:"what does Stand For HTML?",
         answers:[
-            {text:"web",correct:false},
-            { text:"web interface",correct:true},
-            {text:"web",correct:false},
-            {text:"web",correct:false}, 
+            {text:"Hypertext Manipulate Language",correct:false},
+            { text:"Hypertext Markup Language",correct:true},
+            
             ],
     },
 ] 
